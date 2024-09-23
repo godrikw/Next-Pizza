@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button";
 export default function Home() {
   return (
     <div>
-      <Button variant={"default"}>Корзинаsd</Button>
+      <Button variant={"default"}>Корзина</Button>
     </div>
   );
 }
