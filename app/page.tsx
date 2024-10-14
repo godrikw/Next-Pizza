@@ -1,4 +1,6 @@
 import { Container, Filters, Title, TopBar } from '@/components/shared';
+import { ProductsGroupList } from '@/components/shared/products-group-list';
+import { itemsPizza } from '@/globallyObject/pizzaItems';
 
 export default function Home() {
     return (
@@ -21,11 +23,23 @@ export default function Home() {
                     {/*Список товаров*/}
                     <div className={'flex-1'}>
                         <div className={'flex flex-col gap-16'}>
-                            {/*<ProdectsGroupList*/}
-                            {/*    title={'Пиццы'}*/}
-                            {/*    items={[1, 2, 3, 4, 5]}*/}
-                            {/*/>*/}
-                            Список товаров
+                            <ProductsGroupList
+                                title={'Пиццы'}
+                                categoryId={1}
+                                items={itemsPizza}
+                            />
+
+                            <ProductsGroupList
+                                title={'Комбо'}
+                                categoryId={2}
+                                items={itemsPizza}
+                            />
+
+                            <ProductsGroupList
+                                title={'Закуски'}
+                                categoryId={3}
+                                items={itemsPizza}
+                            />
                         </div>
                     </div>
                 </div>
